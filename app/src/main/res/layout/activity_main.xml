@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lyxz.smartrobot.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/id_ly_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="聊天机器人"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/id_listview_msgs"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:layout_weight="1"
+        android:dividerHeight="5dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/id_ly_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bottom_bar" >
+
+
+        <EditText
+            android:id="@+id/id_input_msg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_edit_normal"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/id_send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/send_btn_bg"
+            android:text="发送" />
+    </LinearLayout>
+
+
+</LinearLayout>
